@@ -70,3 +70,4 @@ body > header p{color:rgba(255,255,255,.7)!important}
 p,li{word-break:keep-all}
 @media print{body{background:#fff!important}}
 .hero-eyebrow{display:inline-block!important;width:auto!important;padding:3px 10px!important;margin-bottom:.7rem}
+.bookmark-btn{color:var(--brass)!important;font-size:20px!important}
