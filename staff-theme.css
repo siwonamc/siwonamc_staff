@@ -1,0 +1,72 @@
+/* 시원동물의료센터 원내 포털 테마 — 보호자 사이트(siwonamc_client)와 같은 톤
+   네이비 #0e2442 + 황동색 #86683a + 크림 배경, 제목은 Noto Serif KR, 본문은 Pretendard */
+:root{
+  --navy:#0e2442;--navy-dark:#0b1d36;--navy-light:#ebe6dc;--navy-xlight:#f4f0e8;
+  --accent:#86683a;--accent-light:#efe5d3;
+  --text:#1c2026;--text-mid:#4a4f57;--text-muted:#857f74;
+  --border:#e3ded4;--bg:#f8f5ef;--white:#ffffff;
+  --brass:#86683a;--sand:#d9c7a6;
+}
+html{-webkit-text-size-adjust:100%}
+body{font-family:'Pretendard',-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif!important;letter-spacing:-.01em;background:var(--bg)!important;color:var(--text)}
+::selection{background:var(--accent-light);color:var(--navy)}
+
+/* 상단바: 흰 바탕 + 명조 병원명 */
+.topbar{background:#fff!important;border-bottom:1px solid var(--border)!important;box-shadow:none!important}
+.topbar .logo-mark{display:none!important}
+.topbar .logo-text{display:block!important;font-family:'Noto Serif KR',serif!important;font-size:17px!important;color:var(--navy)!important;font-weight:700!important;line-height:1.2}
+.topbar .logo-text small{display:block;font-family:'Pretendard',sans-serif;font-size:9.5px!important;letter-spacing:.14em!important;color:var(--brass)!important;font-weight:600;margin-top:3px;opacity:1!important;text-transform:uppercase}
+.topbar .tbtn{border-radius:4px!important}
+.topbar .tbtn.call,.foot .tbtn.call{background:#fff!important;color:var(--navy)!important;border:1px solid #c9cfd8!important}
+.topbar .tbtn.ghost,.topbar .tbtn.back{background:transparent!important;color:var(--text-mid)!important;border:1px solid var(--border)!important}
+.topbar .tbtn.kako{border-radius:4px!important}
+.topbar a,.topbar button{color:inherit}
+
+/* 원내 도구 바로가기 줄 */
+.staffnav{background:#fbf9f5!important;border-bottom:1px solid var(--border)!important}
+.staffnav a{border-radius:4px!important}
+.staffnav-lbl{color:var(--brass)!important;letter-spacing:.04em!important;text-transform:none!important}
+
+/* 히어로: 단색 네이비, 빛 번짐 제거 */
+.hero{background:var(--navy)!important;box-shadow:none!important}
+.hero::before,.hero::after{display:none!important}
+.hero h1{font-family:'Noto Serif KR',serif!important;font-weight:600!important;letter-spacing:-.02em!important}
+.hero h1 span,.hero h1 em{color:var(--sand)!important}
+.hero-badge,.hero-eyebrow{letter-spacing:.02em!important;text-transform:none!important;color:var(--sand)!important;background:transparent!important;border:1px solid rgba(217,199,166,.45)!important;border-radius:4px!important}
+
+/* 제목·라벨 */
+.sec-title,.sect-title,h2{font-family:'Noto Serif KR',serif!important;font-weight:600!important;letter-spacing:-.02em!important;color:var(--navy)}
+.kicker{color:var(--brass)!important;letter-spacing:0!important;text-transform:none!important;font-size:12.5px!important;font-weight:600}
+.panel-title,.card-title,.out-title{color:var(--navy)}
+
+/* 카드·패널: 그림자 대신 얇은 선, 각진 모서리 */
+.tool,.copybox,.tipcard,.panel,.card,.out,.sheet,.result-box,.paper-card{border-radius:8px!important;box-shadow:none!important;border-color:var(--border)!important}
+.tool:hover,.tool:focus-visible{transform:none!important;border-color:var(--brass)!important;box-shadow:0 0 0 1px var(--brass)!important}
+.tool-icon,.cicon{background:var(--navy-xlight)!important;border:1px solid var(--border)!important;border-radius:6px!important}
+.tool-name,.cname{color:var(--navy)!important}
+.tool-go{color:var(--brass)!important}
+.tag,.badge,.chip,.dtag{border-radius:3px!important}
+.tag.new{background:#f3ecdf!important;border-color:#e2d3b6!important;color:var(--brass)!important}
+
+/* 버튼 */
+.btn,.cbtn,button.primary,.btn-primary{border-radius:4px!important}
+.btn.primary,.btn-primary,button.primary{background:var(--navy)!important;border-color:var(--navy)!important;color:#fff!important}
+.cbtn:hover{border-color:var(--brass)!important}
+
+/* 입력 */
+input,select,textarea{border-radius:4px!important}
+input:focus,select:focus,textarea:focus{outline-color:var(--brass)!important;border-color:var(--brass)!important}
+
+/* 하단 */
+.foot{background:var(--navy)!important}
+.foot-name{font-family:'Noto Serif KR',serif!important;font-size:15px!important}
+
+/* 논문 페이지(research) 헤더 */
+body > header{background:var(--navy)!important}
+body > header .label{color:var(--sand)!important}
+body > header h1{font-family:'Noto Serif KR',serif!important;font-weight:600!important}
+body > header p{color:rgba(255,255,255,.7)!important}
+
+p,li{word-break:keep-all}
+@media print{body{background:#fff!important}}
+.hero-eyebrow{display:inline-block!important;width:auto!important;padding:3px 10px!important;margin-bottom:.7rem}
