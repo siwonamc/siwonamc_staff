@@ -71,3 +71,14 @@ p,li{word-break:keep-all}
 @media print{body{background:#fff!important}}
 .hero-eyebrow{display:inline-block!important;width:auto!important;padding:3px 10px!important;margin-bottom:.7rem}
 .bookmark-btn{color:var(--brass)!important;font-size:20px!important}
+
+/* 좁은 화면(휴대폰): 상단바의 보호자 홈 버튼이 병원명을 가리지 않도록 정리 */
+@media (max-width:560px){
+  .topbar-inner{gap:.5rem}
+  .topbar .logo-group{min-width:0;flex:1 1 auto;overflow:hidden}
+  .topbar .logo-text{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+  .topbar .logo-text small{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .topbar .tbtn.ghost{display:none!important}
+  .topbar-btns{flex-shrink:0}
+  .topbar .tbtn.call span{font-size:12px}
+}
