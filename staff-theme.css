@@ -82,3 +82,13 @@ p,li{word-break:keep-all}
   .topbar-btns{flex-shrink:0}
   .topbar .tbtn.call span{font-size:12px}
 }
+
+/* ── 새 로고 (2026-11-24): 가로형은 네이비 배지 위에, 휴대폰에서는 정사각 마크 ── */
+.topbar .logo-group{display:flex!important;align-items:center;text-decoration:none;min-width:0}
+.topbar .logo-badge{display:inline-flex;align-items:center;background:var(--navy);border-radius:6px;padding:6px 12px;line-height:0;flex:none}
+.topbar .logo-wide{display:block;height:38px;width:auto;max-width:none}
+.topbar .logo-sq{display:none;width:40px;height:40px;border-radius:8px;flex:none}
+@media(max-width:800px){
+  .topbar .logo-badge{display:none}
+  .topbar .logo-sq{display:block}
+}
